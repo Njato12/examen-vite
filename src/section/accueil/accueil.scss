@@ -77,10 +77,13 @@
     button{
         font-size: 12px;
     }
+}.textIntro{
+    z-index: 2;
 }
 .letter{
     color: #fff;
 }
+
 @screen xl{
     .wrap_Accueil{
         position: relative;
