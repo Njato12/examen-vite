@@ -1,4 +1,3 @@
-import React from 'react'
 import './cardTitleSection.scss'
 type Props = {
     content:string

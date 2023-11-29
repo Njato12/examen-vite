@@ -8,7 +8,7 @@ type Props = {}
 
 
 
-const CardContact = (props: Props) => {
+const CardContact = ({}: Props) => {
 
   let nom: any = useRef(null)
   let email: any = useRef(null)
@@ -37,7 +37,7 @@ const CardContact = (props: Props) => {
     }
   }
 
-  const post = async (e: any) => {
+  const post = async () => {
 
 
 

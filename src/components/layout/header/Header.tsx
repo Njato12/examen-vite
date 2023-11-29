@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 import './header.scss'
 type Props = {}
 
-const Header = (props: Props) => {
+const Header = ({}: Props) => {
   return (
     <div className='header'>
       <Link to='accueil' smooth={true} duration={500}>

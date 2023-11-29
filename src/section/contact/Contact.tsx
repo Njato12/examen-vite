@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 type Props = {}
 
-const Contact = (props: Props) => {
+const Contact = ({}: Props) => {
   
   useEffect(() => {
     gsap.fromTo('.triangleContTop', {
