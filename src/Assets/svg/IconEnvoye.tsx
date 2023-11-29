@@ -1,8 +1,7 @@
-import React from 'react'
 
 type Props = {}
 
-const IconEnvoye = (props: Props) => {
+const IconEnvoye = ({}: Props) => {
     return (
         <div>
             <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">

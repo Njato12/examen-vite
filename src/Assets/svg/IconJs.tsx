@@ -1,8 +1,7 @@
-import React from 'react'
 import js from '../image/js.svg'
 type Props = {}
 
-const IconJs = (props: Props) => {
+const IconJs = ({}: Props) => {
   return (
     <div className='skill'>
       <img src={js} alt="" />

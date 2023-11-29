@@ -1,8 +1,7 @@
-import React from 'react'
 import vercel from '../image/vercel.svg'
 type Props = {}
 
-const IconVercel = (props: Props) => {
+const IconVercel = ({}: Props) => {
   return (
     <div className='skill'>
             <img src={vercel} alt="" />
