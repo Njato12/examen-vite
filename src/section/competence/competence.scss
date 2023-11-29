@@ -1,0 +1,186 @@
+.container_competence{
+    position: relative;
+    .exagC1{
+        position: absolute;
+        top: 120px;
+        left: 0;
+        z-index: 1;
+    }
+    .exagC2{
+        position: absolute;
+        top: 130px;
+        z-index: 1;
+        right: 0
+    }
+    .rondComp{
+        position: absolute;
+        left: 152px;
+        bottom: 220px;
+        z-index: 1;
+    }
+    .triangleComp{
+        position: absolute;
+        left: 220px;
+        bottom: 10px;
+        z-index: 1;
+    }
+    .triangleComp2{
+        position: absolute;
+        right: 220px;
+        bottom: 60px;
+        transform: rotate(-69.79deg);
+        z-index: 1;
+    }
+}
+.competence{
+    width: 100%;
+    height: 100vh;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    z-index: 1;
+
+}
+.wrapCardCompetence{
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, .2);
+   z-index: 2;
+}
+.cardCompetence{
+    padding: 5px 8px;
+    border-radius: 20px;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+    p{
+        font-size: 12px;
+    }
+    
+}
+.competenceS{
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.language{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    gap: 20px;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30px;
+    img{
+        border-radius: 10px;
+        background-color: #fff;
+    }
+   p{   
+    font-size: 10px;
+    text-align: center;
+   }
+}
+@media(min-width:1440px){
+    .exagC2{
+        position: absolute;
+        top: 280px;
+        z-index: 1;
+        right: 0
+    }
+    
+}
+
+@screen lg{
+    .exagC1{
+        position: absolute;
+        top: 170px;
+        left: 0;
+        z-index: 1;
+    }
+    .exagC2{
+        position: absolute;
+        top: 180px;
+        z-index: 1;
+        right: 0
+    }
+    .cardCompetence{
+        padding: 20px 50px;
+        border-radius: 20px;
+        background-color: var(--primary);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    
+        gap: 50px;
+        p{
+            font-size: 16px;
+        }
+        
+    }
+    .wrapCardCompetence{
+        padding: 20px;
+        border-radius: 20px;
+        background-color: var(--blue);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, .2);
+       
+    }
+}
+@screen md{
+    
+}
+@screen sm{
+    .rondComp{
+        position: absolute;
+        left: 152px;
+        bottom: 60px;
+        z-index: 1;
+    }
+    .triangleComp{
+        position: absolute;
+        left: 370px;
+        bottom: 10px;
+        z-index: 1;
+    }
+    .triangleComp2{
+        position: absolute;
+        right: 248px;
+        bottom: 60px;
+        transform: rotate(-69.79deg);
+        z-index: 1;
+    }
+    .skill{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50px;
+        img{
+            border-radius: 10px;
+            background-color: #fff;
+        }
+       p{   
+        font-size: 16px;
+        text-align: center;
+       }
+    }
+}

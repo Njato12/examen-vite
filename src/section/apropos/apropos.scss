@@ -1,0 +1,120 @@
+.wrap_apropos {
+    position: relative;
+
+    .exagAp1 {
+        position: absolute;
+        top: 170px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .exagAp2 {
+        position: absolute;
+        top: 130px;
+        right: 0;
+        z-index: 1;
+    }
+
+    .triAp {
+        position: absolute;
+        top: 45px;
+        right: 498px;
+        transform: rotate(-102.32deg);
+    }
+
+    .rondApTop {
+        position: absolute;
+        right: 210px;
+        bottom: 110px;
+        z-index: 1;
+    }
+
+    .rondApBottom {
+        position: absolute;
+        left: 200px;
+        bottom: 18px;
+        z-index: 1;
+    }
+}
+
+.container_apropos {
+    height: 100vh;
+    @apply flex items-center justify-center;
+    flex-direction: column;
+    gap: 50px;
+
+    p {
+        font-size: 20px;
+        
+
+    }
+}
+.textApropos{
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, .2);
+}
+.apropos {
+    @apply flex items-center justify-center flex-col;
+    gap: 20px;
+    z-index: 2;
+
+    img {
+        width: calc(398 * var(--res));
+    }
+
+    
+}
+.buttonAp {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, .2);
+    font-size: 12px;
+
+}
+@screen xl{
+    .exagAp1 {
+        position: absolute;
+        top: 200px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .exagAp2 {
+        position: absolute;
+        top: 150px;
+        right: 0;
+        z-index: 1;
+    }
+}
+@screen lg {
+    .apropos {
+        @apply flex items-center justify-center flex-row;
+        gap: 50px;
+
+        img {
+            width: calc(398 * var(--res));
+        }
+
+    }
+
+    .container_apropos {
+        p {
+            font-size: 32px
+        }
+    }
+
+    .rondApBottom {
+        position: absolute;
+        left: 400px;
+        bottom: 18px;
+    }
+    .rondApTop {
+        position: absolute;
+        right: 210px;
+        bottom: 180px;
+        z-index: -1;
+    }
+}
+@screen sm{
+    .buttonAp{
+        font-size: 16px
+    }
+}

@@ -1,0 +1,87 @@
+.wrap_contact{
+    position: relative;
+    .exagCont1{
+        position: absolute;
+        left: 0;
+        top: 200px;
+        z-index: 1;
+    }
+    .exagCont2{
+        position: absolute;
+        right: 0;
+        top: 120px;
+        z-index: 1;
+    }
+    .rondCont{
+        position: absolute;
+        top: 150px;
+        right: 200px;
+        z-index: 1;
+    }
+    .triangleContTop{
+        position: absolute;
+        left: 116px;
+        top: 230px;
+        z-index: 1;
+    }
+    .triangleContBottom{
+        position: absolute;
+        right: 20px;
+        bottom: 100px;
+        z-index: 1;
+    }
+}
+.contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profil{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    z-index: 2;
+    img{
+        width: calc(250 * var(--res));
+    }
+}
+.conversation{
+    z-index: 2;
+}
+@screen lg{
+    .rondCont{
+        position: absolute;
+        top: 123px;
+        right: 332px;
+        z-index: 1;
+    }
+    .exagCont1{
+        position: absolute;
+        left: 0;
+        top: 333px;
+        z-index: 1;
+    }
+    .exagCont2{
+        position: absolute;
+        right: 0;
+        top: 146px;
+        z-index: 1;
+    }
+}
+@screen md{
+    .triangleContBottom{
+        position: absolute;
+        right: 69px;
+        bottom: 100px;
+    }
+    .rondCont{
+        position: absolute;
+        top: 123px;
+        right: 200px;
+        z-index: 1;
+    }
+}

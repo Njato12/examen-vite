@@ -1,0 +1,94 @@
+.wrap_cardContact {
+    padding: 10px;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, .2);
+
+}
+
+.input {
+    @apply flex flex-col;
+
+}
+
+.cardMessage {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.message {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    p {
+        color: #0A1112;
+    }
+
+    textarea {
+        padding: 10px;
+        width: 250px;
+        height: 80px;
+        background-color: var(--primary);
+        border: solid 5px #fff;
+        border-radius: 20px;
+        outline: none;
+    }
+}
+
+.button {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.buttonSend {
+    padding: 10px 20px;
+    background-color: var(--primary);
+}
+
+@screen lg {
+
+    .wrap_cardContact {
+        padding: 10px;
+        background-color: var(--blue);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, .2);
+
+    }
+}
+
+@screen sm {
+    .message {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        textarea {
+            padding: 10px;
+            width: 426px;
+            height: 149px;
+            background-color: var(--primary);
+            border: solid 5px #fff;
+            border-radius: 20px;
+            outline: none;
+        }
+    }
+    .button {
+        padding: 10px;
+        font-size: 16px
+    }
+
+}
