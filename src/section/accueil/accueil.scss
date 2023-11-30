@@ -83,7 +83,9 @@
 .letter{
     color: #fff;
 }
-
+.button{
+    z-index: 2;
+}
 @screen xl{
     .wrap_Accueil{
         position: relative;
