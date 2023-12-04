@@ -3,6 +3,7 @@ import './cardContact.scss'
 import { TextField } from '@mui/material'
 import Button from '../../general/button/Button'
 import axios from 'axios'
+import toast from 'react-hot-toast'
 
 type Props = {}
 
@@ -52,7 +53,7 @@ const CardContact = ({}: Props) => {
 
     try {
       if (!a || !b || !c || !d) {
-        alert('veuiller tous remplir les formulaires')
+        toast.error('veuiller tous remplir les cages')
       }
       else {
         await axios.post("https://api.emailjs.com/api/v1.0/email/send", data)
@@ -62,7 +63,7 @@ const CardContact = ({}: Props) => {
         email.lastElementChild.lastElementChild.value = ''
         sujet.lastElementChild.lastElementChild.value = ''
         message.value = ''
-        alert('message envoyé')
+        toast.success('envoyé')
         window.scrollTo(0,0)
       }
 
