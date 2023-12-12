@@ -11,8 +11,21 @@
 
 }
 
+
 .input {
     @apply flex flex-col;
+    label{
+        color:#fff ;
+    }
+    ::before{
+        border-bottom: 1px solid #fff !important
+    }
+    ::after{
+        border-bottom: 1px solid #fff !important
+    }
+    input {
+        color: #fff;
+    }
 
 }
 
@@ -28,9 +41,6 @@
     flex-direction: column;
     gap: 5px;
 
-    p {
-        color: #0A1112;
-    }
 
     textarea {
         padding: 10px;
