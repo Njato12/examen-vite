@@ -14,19 +14,34 @@
 
 .input {
     @apply flex flex-col;
-    label{
-        color:#fff ;
+
+    label {
+        color: #fff;
     }
-    // @screen 2xl{
-    // }
-    ::before{
+
+    @screen 2xl {
+        label {
+            font-size: 30px
+        }
+    }
+
+    ::before {
         border-bottom: 1px solid #fff !important
     }
-    ::after{
+
+    ::after {
         border-bottom: 1px solid #fff !important
     }
+
     input {
         color: #fff;
+    }
+
+    @screen 2xl {
+        input {
+            padding: 14px 0 15px;
+            font-size:30px;
+        }
     }
 
 }
@@ -35,6 +50,13 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+}
+
+@screen 2xl {
+    .cardMessage {
+        font-size: 30px;
+
+    }
 }
 
 .message {
@@ -53,6 +75,35 @@
         border-radius: 20px;
         outline: none;
     }
+
+    @screen sm {
+
+        textarea {
+            padding: 10px;
+            width: 426px;
+            height: 149px;
+            background-color: var(--primary);
+            border: solid 5px #fff;
+            border-radius: 20px;
+            outline: none;
+        }
+
+    }
+
+    @screen 2xl {
+        textarea {
+            width: 450px;
+        }
+    }
+}
+
+@screen sm {
+    .message {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 .button {
@@ -60,9 +111,16 @@
     font-size: 12px;
 }
 
+
 .buttonSend {
     padding: 10px 20px;
     background-color: var(--primary);
+}
+
+@screen 2xl {
+    .buttonSend {
+        font-size: 30px
+    }
 }
 
 @screen lg {
@@ -80,24 +138,31 @@
 
     }
 }
+@screen 2xl
+ {
 
-@screen sm {
-    .message {
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-
-        textarea {
-            padding: 10px;
-            width: 426px;
-            height: 149px;
-            background-color: var(--primary);
-            border: solid 5px #fff;
-            border-radius: 20px;
-            outline: none;
-        }
+    .wrap_cardContact{
+        padding:30px
     }
+ }
+@screen sm {
+    // .message {
+    //     padding: 10px;
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 10px;
+
+    //     textarea {
+    //         padding: 10px;
+    //         width: 426px;
+    //         height: 149px;
+    //         background-color: var(--primary);
+    //         border: solid 5px #fff;
+    //         border-radius: 20px;
+    //         outline: none;
+    //     }
+    // }
+
     .button {
         padding: 10px;
         font-size: 16px
