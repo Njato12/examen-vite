@@ -5,7 +5,7 @@ const IconVercel = ({}: Props) => {
   return (
     <div className='skill'>
             <img src={vercel} alt="" />
-            <p>vercel</p>
+            <p>Vercel</p>
         </div>
   )
 }

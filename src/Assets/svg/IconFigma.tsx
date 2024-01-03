@@ -5,7 +5,7 @@ const IconFigma = ({}: Props) => {
     return (
         <div className='skill'>
             <img src={figma} alt="" />
-            <p>figma</p>
+            <p>Figma</p>
         </div>
     )
 }

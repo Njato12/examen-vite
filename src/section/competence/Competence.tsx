@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import './competence.scss'
-import CardTitleSection from '../../components/display/cardTitleSection/CardTitleSection'
 import Button from '../../components/general/button/Button'
 import IconReact from '../../Assets/svg/IconReact'
 import IconJs from '../../Assets/svg/IconJs'
@@ -107,7 +106,6 @@ function Competence() {
 
   return (
     <div className='container_competence' id='competence'>
-      <CardTitleSection content='Compétences' />
       <ExagonComp1 className='exagC1' />
       <ExagonComp2 className='exagC2' />
       <Rond className='rondComp' />

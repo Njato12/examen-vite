@@ -91,6 +91,7 @@
     img{
         border-radius: 10px;
         background-color: #fff;
+        object-fit: cover;
     }
    p{   
     font-size: 10px;
@@ -182,5 +183,17 @@
         font-size: 16px;
         text-align: center;
        }
+    }
+}
+@screen 2xl {
+    .cardCompetence{
+        p{
+            font-size:30px
+        }
+    }
+    .skill{
+        p{
+            font-size: 25px
+        }
     }
 }

@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import './accueil.scss'
 import Button from '../../components/general/button/Button'
-import CardTitleSection from '../../components/display/cardTitleSection/CardTitleSection'
 import Triangle from '../../Assets/svg/Triangle'
 import Rond from '../../Assets/svg/Rond'
 import image1 from '../../Assets/image/image1.png'
@@ -117,7 +116,6 @@ export default function Accueil() {
 
   return (
     <div className='wrap_Accueil' id='accueil'>
-      <CardTitleSection content='Accueil' />
       <Triangle className='triangle1' />
       <Triangle className='triangle2' />
       <Triangle className='triangle3' />

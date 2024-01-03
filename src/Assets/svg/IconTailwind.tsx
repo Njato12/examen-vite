@@ -5,7 +5,7 @@ const IconTailwind = ({}: Props) => {
     return (
         <div className='skill'>
             <img src={tailwind} alt="" />
-            <p>tailwind</p>
+            <p>Tailwind</p>
         </div>
     )
 }

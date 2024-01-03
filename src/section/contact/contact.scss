@@ -85,3 +85,12 @@
         z-index: 1;
     }
 }
+@screen 2xl {
+    .profil{
+        .textContact{
+            p{
+                font-size:30px
+            }
+        }
+    }
+}

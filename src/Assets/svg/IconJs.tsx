@@ -5,7 +5,7 @@ const IconJs = ({}: Props) => {
   return (
     <div className='skill'>
       <img src={js} alt="" />
-      <p>javascript</p>
+      <p>Javascript</p>
     </div>
   )
 }

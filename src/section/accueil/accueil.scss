@@ -1,40 +1,113 @@
-.wrap_Accueil{
+.wrap_Accueil {
     margin-top: 50px;
     position: relative;
-    .triangle1{
+
+    .triangle1 {
         position: absolute;
         top: 75px;
-        left: 220px ;
+        left: 220px;
     }
-    .triangle2{
+
+    @screen sm {
+        .triangle1 {
+            left: 340px;
+        }
+    }
+
+    @screen md {
+        .triangle1 {
+            left: 360px;
+        }
+    }
+
+    @screen xl {
+        .triangle1 {
+            top: 84px;
+            left: 573px;
+        }
+    }
+
+    .triangle2 {
         position: absolute;
         bottom: 43px;
         left: 83px;
         transform: rotate(-102deg);
 
     }
-    .triangle3{
+
+    .triangle3 {
         position: absolute;
         bottom: 51px;
         right: 120px;
         transform: rotate(70deg);
     }
-    .rond1{
+
+    .rond1 {
         position: absolute;
         top: 150px;
         right: 130px;
     }
-    .rond2{
+
+    @screen sm {
+        .rond1 {
+            top: 250px;
+            right: 100px;
+        }
+    }
+
+    @screen lg {
+        .rond1 {
+            top: 250px;
+            right: 140px;
+        }
+    }
+
+    @screen xl {
+        .rond1 {
+            right: 80px;
+        }
+    }
+
+    .rond2 {
         position: absolute;
         bottom: 200px;
         right: 360px;
     }
-    .rond3{
+
+    @screen lg {
+        .rond2 {
+            bottom: 120px;
+            right: 400px;
+        }
+    }
+
+    @screen xl {
+        .rond2 {
+            bottom: 199px;
+            right: 554px;
+        }
+    }
+
+    .rond3 {
         position: absolute;
         bottom: 80px;
         left: 200px;
     }
-    .image1{
+
+    @screen sm {
+        .rond3 {
+            left: 250px;
+        }
+    }
+
+    @screen xl {
+        .rond3 {
+            bottom: 104px;
+            left: 374px;
+        }
+    }
+
+    .image1 {
         position: absolute;
         width: 80px;
         height: 80px;
@@ -42,7 +115,32 @@
         right: 200px;
         z-index: 1;
     }
-    .image2{
+
+    @screen sm {
+        .image1 {
+            width: 120px;
+            height: 120px;
+            top: 74px;
+            right: 440px;
+            z-index: -1;
+        }
+    }
+
+    @screen xl {
+        .image1 {
+            width: 150px;
+            height: 150px;
+            right: 472px;
+        }
+    }
+    @screen 2xl {
+        .image1{
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .image2 {
         position: absolute;
         width: 120px;
         height: 120px;
@@ -50,7 +148,50 @@
         left: 180px;
         z-index: 1;
     }
-    .image3{
+
+    @screen sm {
+        .image2 {
+            width: 160px;
+            height: 160px;
+            top: 180px;
+            left: 300px;
+            z-index: -1;
+        }
+    }
+
+    @screen md {
+        .image2 {
+            top: 222px;
+            left: 370px;
+            z-index: -1;
+        }
+    }
+
+    @screen lg {
+        .image2 {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    @screen xl {
+        .image2 {
+            width: 250px;
+            height: 250px;
+            top: 222px;
+            left: 448px;
+        }
+    }
+    @screen 2xl {
+        .image2{
+            width: 300px;
+            height: 300px;
+            top:300px;
+            left:650px
+        }
+    }
+
+    .image3 {
         position: absolute;
         width: 100px;
         height: 100px;
@@ -58,308 +199,117 @@
         right: 180px;
         z-index: 1;
     }
-    
-    
-}
-.accueil {
-    @apply flex items-center flex-wrap relative;
-    padding: 0 30px ;
-    height: 100vh;
-    
-    h1{
-        font-size: 40px;
-        z-index: 2;
+
+    @screen sm {
+        .image3 {
+            width: 140px;
+            height: 140px;
+            top: 340px;
+            right: 140px;
+            z-index: -1;
+        }
     }
-    
-    p{
-        font-size: 16px;
+
+    @screen md {
+        .image3 {
+            width: 140px;
+            height: 140px;
+            top: 380px;
+            right: 180px;
+            z-index: -1;
+        }
     }
-    button{
-        font-size: 12px;
+
+    @screen lg {
+        .image3 {
+            top: 280px;
+            right: 250px;
+            z-index: -1;
+        }
     }
-}.textIntro{
-    z-index: 2;
-}
-.letter{
-    color: #fff;
-}
-.button{
-    z-index: 2;
-}
-@screen xl{
-    .wrap_Accueil{
-        position: relative;
-        .triangle1{
-            position: absolute;
-            top: 84px;
-            left: 573px;
-        }
-        .triangle2{
-            position: absolute;
-            bottom: 43px;
-            left: 83px;
-            transform: rotate(-102deg);
-    
-        }
-        .triangle3{
-            position: absolute;
-            bottom: 51px;
-            right: 120px;
-            transform: rotate(70deg);
-        }
-        .rond1{
-            position: absolute;
-            top: 250px;
-            right: 80px;
-        }
-        .rond2{
-            position: absolute;
-            bottom: 199px;
-            right: 554px;
-        }
-        .rond3{
-            position: absolute;
-            bottom: 104px;
-            left: 374px;
-        }
-        .image1{
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            top: 74px;
-            right: 472px;
-        }
-        .image2{
-            position: absolute;
-            width: 250px;
-            height: 250px;
-            top: 222px;
-            left: 448px;
-        }
-        .image3{
-            position: absolute;
+
+    @screen xl {
+        .image3 {
             width: 200px;
             height: 200px;
             top: 274px;
             right: 252px;
         }
-        
-        
+    }
+    @screen 2xl {
+        .image3{
+            width: 250px;
+            height: 250px;
+            top:400px
+        }
+    }
+
+
+}
+
+.accueil {
+    @apply flex items-center flex-wrap relative;
+    padding: 0 30px;
+    height: 100vh;
+
+    h1 {
+        font-size: 40px;
+        z-index: 2;
+
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 12px;
     }
 }
-@screen lg{
-    .triangle1{
-        position: absolute;
-        top: 75px;
-        left: 360px ;
-    }
-    .triangle2{
-        position: absolute;
-        bottom: 43px;
-        left: 83px;
-        transform: rotate(-102deg);
 
-    }
-    .triangle3{
-        position: absolute;
-        bottom: 51px;
-        right: 120px;
-        transform: rotate(70deg);
-    }
-    .rond1{
-        position: absolute;
-        top: 250px;
-        right: 140px;
-    }
-    .rond2{
-        position: absolute;
-        bottom: 120px;
-        right: 400px;
-    }
-    .rond3{
-        position: absolute;
-        bottom: 80px;
-        left: 250px;
-    }
-
-    .image1{
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        top: 74px;
-        right: 472px;
-    }
-    .image2{
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        top: 222px;
-        left: 448px;
-    }
-    .image3{
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        top: 274px;
-        right: 252px;
-    }
-
-    .image1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        top: 74px;
-        right: 440px;
-        z-index: -1;
-    }
-    .image2{
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        top: 222px;
-        left: 370px;
-        z-index: -1;
-    }
-    .image3{
-        position: absolute;
-        width: 140px;
-        height: 140px;
-        top: 280px;
-        right: 250px;
-        z-index: -1;
-    }
-}
-@screen md {
-    .triangle1{
-        position: absolute;
-        top: 75px;
-        left: 360px ;
-    }
-    .triangle2{
-        position: absolute;
-        bottom: 43px;
-        left: 83px;
-        transform: rotate(-102deg);
-
-    }
-    .triangle3{
-        position: absolute;
-        bottom: 51px;
-        right: 120px;
-        transform: rotate(70deg);
-    }
-    .rond1{
-        position: absolute;
-        top: 250px;
-        right: 100px;
-    }
-    .rond2{
-        position: absolute;
-        bottom: 200px;
-        right: 360px;
-    }
-    .rond3{
-        position: absolute;
-        bottom: 80px;
-        left: 250px;
-    }
-    .image1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        top: 74px;
-        right: 440px;
-        z-index: -1;
-    }
-    .image2{
-        position: absolute;
-        width: 160px;
-        height: 160px;
-        top: 222px;
-        left: 370px;
-        z-index: -1;
-    }
-    .image3{
-        position: absolute;
-        width: 140px;
-        height: 140px;
-        top: 380px;
-        right: 180px;
-        z-index: -1;
-    }
-}
-@screen sm{
-    .triangle1{
-        position: absolute;
-        top: 75px;
-        left: 340px ;
-    }
-    .triangle2{
-        position: absolute;
-        bottom: 43px;
-        left: 83px;
-        transform: rotate(-102deg);
-
-    }
-    .triangle3{
-        position: absolute;
-        bottom: 51px;
-        right: 120px;
-        transform: rotate(70deg);
-    }
-    .rond1{
-        position: absolute;
-        top: 250px;
-        right: 100px;
-    }
-    .rond2{
-        position: absolute;
-        bottom: 200px;
-        right: 360px;
-    }
-    .rond3{
-        position: absolute;
-        bottom: 80px;
-        left: 250px;
-    }
-    .image1{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        top: 74px;
-        right: 440px;
-        z-index: -1;
-    }
-    .image2{
-        position: absolute;
-        width: 160px;
-        height: 160px;
-        top: 180px;
-        left: 300px;
-        z-index: -1;
-    }
-    .image3{
-        position: absolute;
-        width: 140px;
-        height: 140px;
-        top: 340px;
-        right: 140px;
-        z-index: -1;
-    }
+@screen sm {
     .accueil {
-        @apply flex items-center flex-wrap relative;
         padding: 0 60px;
-        height: 100vh;
-        
-        h1{
+
+        h1 {
             font-size: 60px;
         }
-        
-        p{
+
+        p {
             font-size: 20px;
         }
-        button{
+
+        button {
             font-size: 16px;
         }
     }
+}
+@screen 2xl {
+    .accueil {
+        padding: 0 150px;
+
+        h1 {
+            font-size: 93px;
+        }
+
+        p {
+            font-size: 35px;
+        }
+
+        button {
+            font-size: 30px;
+        }
+    }
+}
+
+.textIntro {
+    z-index: 2;
+}
+
+.letter {
+    color: #fff;
+}
+
+.button {
+    z-index: 2;
 }

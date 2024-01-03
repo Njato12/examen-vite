@@ -38,4 +38,14 @@
         font-size: 16px;
         padding: 0;
     }
+
+}
+@screen 2xl {
+    .header{
+        height: 65px;
+        padding:20px 80px
+    }
+    .nav{
+        font-size: 30px;
+    }
 }

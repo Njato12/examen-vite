@@ -5,7 +5,7 @@ const IconSass = ({}: Props) => {
   return (
     <div className='skill'>
             <img src={sass} alt="" />
-            <p>sass</p>
+            <p>Sass</p>
         </div>
   )
 }

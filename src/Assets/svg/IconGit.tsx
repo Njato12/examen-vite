@@ -5,7 +5,7 @@ const IconGit = ({}: Props) => {
     return (
         <div className='skill'>
             <img src={git} alt="" />
-            <p>git</p>
+            <p>Git</p>
         </div>
     )
 }

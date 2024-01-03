@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import about from '../../Assets/image/about.png'
 import './apropos.scss'
-import CardTitleSection from '../../components/display/cardTitleSection/CardTitleSection'
 import Button from '../../components/general/button/Button'
 import ExagonAp1 from '../../Assets/svg/ExagonAp1'
 import ExagonAp2 from '../../Assets/svg/ExagonAp2'
@@ -73,7 +72,6 @@ const Apropos = ({}: Props) => {
   }, [])
   return (
     <div className='wrap_apropos' id='apropos'>
-      <CardTitleSection content='Apropos' />
       <ExagonAp1 className='exagAp1' />
       <ExagonAp2 className='exagAp2' />
       <Triangle className='triAp' />

@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import profil from '../../Assets/image/contact.png'
 import './contact.scss'
 import CardContact from '../../components/display/cardContact/CardContact'
-import CardTitleSection from '../../components/display/cardTitleSection/CardTitleSection'
 import ExagonCont1 from '../../Assets/svg/ExagonCont1'
 import ExagonCont2 from '../../Assets/svg/ExagonCont2'
 import Triangle from '../../Assets/svg/Triangle'
@@ -77,7 +76,6 @@ const Contact = ({}: Props) => {
   
   return (
     <div className='wrap_contact' id='contact'>
-      <CardTitleSection content='Contact' />
       <ExagonCont1 className='exagCont1'/>
       <ExagonCont2 className='exagCont2'/>
       <Triangle className='triangleContTop'/>
