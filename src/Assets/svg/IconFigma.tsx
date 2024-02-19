@@ -1,7 +1,6 @@
 import figma from '../image/figma.svg'
-type Props = {}
 
-const IconFigma = ({}: Props) => {
+const IconFigma = () => {
     return (
         <div className='skill'>
             <img src={figma} alt="" />

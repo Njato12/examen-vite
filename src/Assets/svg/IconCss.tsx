@@ -1,7 +1,6 @@
 import css from '../image/css.svg'
-type Props = {}
 
-const IconCss = ({}: Props) => {
+const IconCss = () => {
     return (
         <div className='skill'>
             <img src={css} alt="" />

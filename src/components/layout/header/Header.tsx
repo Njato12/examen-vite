@@ -2,9 +2,8 @@
 import Button from '../../general/button/Button'
 import { Link } from 'react-scroll'
 import './header.scss'
-type Props = {}
 
-const Header = ({}: Props) => {
+const Header = () => {
   return (
     <div className='header'>
       <Link to='accueil' smooth={true} duration={500}>

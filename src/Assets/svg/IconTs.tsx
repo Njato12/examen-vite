@@ -1,7 +1,6 @@
 import tps from '../image/ts.svg'
-type Props = {}
 
-const IconTs = ({}: Props) => {
+const IconTs = () => {
   return (
     <div className='skill'>
         <img src={tps} alt="" />

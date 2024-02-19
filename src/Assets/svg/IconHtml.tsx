@@ -1,7 +1,6 @@
 import html from '../image/html.svg'
-type Props = {}
 
-const IconHtml = ({}: Props) => {
+const IconHtml = () => {
   return (
     <div className='skill'>
         <img src={html} alt="" />

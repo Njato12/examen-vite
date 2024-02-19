@@ -10,9 +10,8 @@ import { gsap } from "gsap";
 import { Link } from 'react-scroll'
 
 
-type Props = {}
 
-const Apropos = ({}: Props) => {
+const Apropos = () => {
   useEffect(() => {
     gsap.fromTo('.triAp', {
       scale: 0,

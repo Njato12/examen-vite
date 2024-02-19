@@ -1,7 +1,6 @@
 import tailwind from '../image/tailwind.svg'
-type Props = {}
 
-const IconTailwind = ({}: Props) => {
+const IconTailwind = () => {
     return (
         <div className='skill'>
             <img src={tailwind} alt="" />

@@ -1,9 +1,8 @@
 
 import './footer.scss'
 
-type Props = {}
 
-const Footer = ({}: Props) => {
+const Footer = () => {
   return (
     <div className='container_footer'>
       <div className="footer">

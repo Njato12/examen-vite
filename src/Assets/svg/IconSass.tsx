@@ -1,7 +1,6 @@
 import sass from '../image/Rectangle 6.svg'
-type Props = {}
 
-const IconSass = ({}: Props) => {
+const IconSass = () => {
   return (
     <div className='skill'>
             <img src={sass} alt="" />
