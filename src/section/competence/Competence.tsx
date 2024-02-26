@@ -96,7 +96,8 @@ function Competence() {
         trigger: '.cardCompetence',
         toggleActions: "restart reverse play reverse",
         start: 'top 80%',
-        end: 'bottom 45%%',
+        end: 'bottom 25%',
+        markers: true
       }
     })
   }, [])
