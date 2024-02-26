@@ -30,19 +30,17 @@ function Competence() {
         trigger: '.exagC1',
         start: 'top 70%',
         scrub: 0.5,
-
       }
     })
     gsap.fromTo('.exagC2', {
       y: -100,
     }, {
       y: 10,
-      duration: 1,
-      ease: 'bounce',
       scrollTrigger: {
         trigger: '.exagC1',
-        start: 'top center',
-        end: 'bottom center'
+        start: 'top 70%',
+        end: 'bottom bottom',
+        scrub: 1,
       }
     })
   }, [])
