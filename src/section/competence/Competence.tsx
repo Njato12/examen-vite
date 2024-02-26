@@ -90,19 +90,21 @@ function Competence() {
   }, [])
   useEffect(() => {
     gsap.fromTo('.skill', {
-      scale: 0
+      opacity: 0
     }, {
-      scale: 1,
+      opacity
+        : 1,
       stagger: 0.1,
-      duration: 1,
+      duration: 0.3,
       ease: 'elastic',
       scrollTrigger: {
         trigger: '.cardCompetence',
-        start: 'top center',
-        end: 'bottom center'
+        toggleActions: "restart reverse play reverse",
+        start: 'top 80%',
+        end: 'bottom 35%',
       }
     })
-  })
+  }, [])
 
   return (
     <div className='container_competence' id='competence'>
