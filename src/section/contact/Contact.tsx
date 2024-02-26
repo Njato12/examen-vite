@@ -12,73 +12,74 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 const Contact = () => {
-  
+
   useEffect(() => {
     gsap.fromTo('.triangleContTop', {
-      scale:0,
+      scale: 0,
       rotateX: 250,
-      duration:2,
-      repeat:-1,
+      duration: 2,
+      repeat: -1,
       yoyo: true
-    },{
-      scale:1,
-      rotateX:0,
-      duration:1,
-      repeat:-1,
+    }, {
+      scale: 1,
+      rotateX: 0,
+      duration: 1,
+      repeat: -1,
       yoyo: true
 
     }
     )
     gsap.fromTo('.triangleContBottom', {
-      scale:0,
+      scale: 0,
       rotateY: -360,
-      duration:2,
-      repeat:-1,
+      duration: 2,
+      repeat: -1,
       yoyo: true
-    },{
-      scale:1,
-      rotateY:0,
-      duration:2,
-      repeat:-1,
+    }, {
+      scale: 1,
+      rotateY: 0,
+      duration: 2,
+      repeat: -1,
       yoyo: true
 
     }
     )
-    gsap.fromTo('.exagCont1',{
-      y:-200,
+    gsap.fromTo('.exagCont1', {
+      y: -200,
 
-    },{
-      y:0,
-      duration:1,
-      scrollTrigger:{
-        trigger:'.exagCont1',
-        start:'top center',
-        end: 'bottom center'
+    }, {
+      y: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '.exagCont1',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: 1
       },
-      ease:'bounce'
     })
-    gsap.fromTo('.exagCont2',{
-      y:200,
+    gsap.fromTo('.exagCont2', {
+      y: 200,
 
-    },{
-      y:0,
-      duration:1,
-      scrollTrigger:{
-        trigger:'.exagCont1',
-        start:'top center',
-        end: 'bottom center'
+    }, {
+      y: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '.exagCont1',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: 1
+
       },
-      ease:'bounce'
 
     })
   }, [])
-  
+
   return (
     <div className='wrap_contact' id='contact'>
-      <ExagonCont1 className='exagCont1'/>
-      <ExagonCont2 className='exagCont2'/>
-      <Triangle className='triangleContTop'/>
-      <Triangle className='triangleContBottom'/>
+      <ExagonCont1 className='exagCont1' />
+      <ExagonCont2 className='exagCont2' />
+      <Triangle className='triangleContTop' />
+      <Triangle className='triangleContBottom' />
       <div className="contact">
         <div className="profil">
           <img src={profil} alt="" />
