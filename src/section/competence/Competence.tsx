@@ -26,12 +26,11 @@ function Competence() {
       x: -200,
     }, {
       x: 0,
-      duration: 1,
-      ease: 'bounce',
       scrollTrigger: {
         trigger: '.exagC1',
-        start: 'top center',
-        end: 'bottom center'
+        start: 'top 70%',
+        scrub: 0.5,
+
       }
     })
     gsap.fromTo('.exagC2', {
@@ -87,24 +86,25 @@ function Competence() {
       duration: 2,
 
     })
-  }, [])
-  useEffect(() => {
     gsap.fromTo('.skill', {
       opacity: 0
     }, {
       opacity
         : 1,
       stagger: 0.1,
-      duration: 0.3,
+      duration: 0.5,
       ease: 'elastic',
       scrollTrigger: {
         trigger: '.cardCompetence',
         toggleActions: "restart reverse play reverse",
         start: 'top 80%',
-        end: 'bottom 35%',
+        end: 'bottom 45%%',
       }
     })
   }, [])
+
+
+
 
   return (
     <div className='container_competence' id='competence'>
