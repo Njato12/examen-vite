@@ -47,13 +47,12 @@ const Apropos = () => {
 
     }, {
       y: 0,
-      duration: 1,
       scrollTrigger: {
         trigger: '.exagAp2',
         start: 'top center',
-        end: 'bottom center'
+        end: 'bottom center',
+        scrub: 1
       },
-      ease: 'bounce'
     })
     gsap.fromTo('.exagAp2', {
       y: -200,
@@ -64,9 +63,9 @@ const Apropos = () => {
       scrollTrigger: {
         trigger: '.exagAp2',
         start: 'top center',
-        end: 'bottom center'
+        end: 'bottom center',
+        scrub: 1
       },
-      ease: 'bounce'
     })
   }, [])
   return (

@@ -51,7 +51,7 @@ export default function Accueil() {
       ease: "elastic"
 
     })
-  }, [])
+  })
 
 
   useEffect(() => {
@@ -146,7 +146,7 @@ export default function Accueil() {
             <Link to='contact' smooth={true} duration={500}>
               <Button className='buttonAp' text='Contact' />
             </Link>
-            
+
           </div>
 
         </div>
