@@ -97,7 +97,6 @@ function Competence() {
         toggleActions: "restart reverse play reverse",
         start: 'top 80%',
         end: 'bottom 25%',
-        markers: true
       }
     })
   }, [])
